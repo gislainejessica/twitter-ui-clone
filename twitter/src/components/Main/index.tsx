@@ -15,14 +15,17 @@ const Main: React.FC = () => {
           <strong> Gislaine Jéssica </strong>
           <span> 233 Tweets</span>
         </ProfileInfo>
+
       </Header>
+
       <ProfilePage />
+
       <BottomMenu>
-       <HomeIcon />
-       <SearchIcon />
-       <BellIcon className="active"/>
-       <EmailIcon/>
-       </BottomMenu>
+        <HomeIcon />
+        <SearchIcon />
+        <BellIcon className="active"/>
+        <EmailIcon/>
+      </BottomMenu>
 
     </Container>
   );
