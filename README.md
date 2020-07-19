@@ -5,3 +5,5 @@ Clone da interface do twitter
 - [ ] Fazer um video mostrando responsividade
 - [ ] Desafios e aprendizados
 - [ ] Funcionalidades adicionadas partindo do video inicial
+
+( ) Mudar os temas com as cores do twitter 
