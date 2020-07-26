@@ -15,6 +15,8 @@ import { Container,
    RetweetIcone,
    LikeIcon } from './styles';
 
+import image from '../../images/unicorn.jpg';
+
 const Tweet: React.FC = () => {
   return(
     <Container>
@@ -23,7 +25,7 @@ const Tweet: React.FC = () => {
         Você Retweetou
       </Retweeted>
       <Body>
-        <Avatar />
+        <Avatar src={image} alt="perfil"/>
         <Content>
           <Header>
             <strong>Rockeseat</strong>

@@ -4,12 +4,16 @@ import Feed from '../Feed';
 
 import { Container, Banner, Avatar, ProfileData, LocationIcon, CakeIcon, FollowAge, EditButton } from './styles';
 //import { Edit } from 'styled-icons/material-outlined';
+import image from '../../images/unicorn.jpg';
 
 const ProfilePage: React.FC = () => {
   return (
     <Container>
       <Banner>
-        <Avatar />
+        <Avatar  src={image} alt="perfil">
+          {/* <img style={{width: 25, height: 25}} src={image} alt="perfil"/> */}
+        </Avatar>
+
       </Banner>
 
       <ProfileData>
@@ -18,7 +22,7 @@ const ProfilePage: React.FC = () => {
         <h2>@jessy_code</h2>
 
         <p>
-          Developer at <a href="https://udna.life"> @udna </a>
+          More info at <a href="https://github.com/gislainejessica"> @github/gislainejessica </a>
         </p>
 
         <ul>

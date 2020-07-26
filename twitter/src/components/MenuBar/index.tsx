@@ -1,58 +1,60 @@
 import React from 'react';
 import Button from '../Button';
-import { Container,
-   Topside,
-   Logo,
-   MenuButton,
-   HomeIcon,
-   BellIcon,
-   FavoriteIcon,
-   EmailIcon,
-   ProfileIcon,
-   BottomSide,
+import {
+  Container,
+  TopSide,
+  Logo,
+  MenuButton,
+  HomeIcon,
+  BellIcon,
+  EmailIcon,
+  FavoriteIcon,
+  ExitIcon,
+  BottomSide,
   Avatar,
   ProfileData,
-  ExitIcon
-   } from './styles';
+  ProfileIcon} from './styles';
+
+import image from '../../images/unicorn.jpg';
 
 const MenuBar: React.FC = () => {
-  return(
+  return (
     <Container>
-      <Topside>
-        <Logo />
+        <TopSide>
+          <Logo/>
+          <MenuButton className="active">
+            <HomeIcon />
+            <span> Pagina inicial</span>
+          </MenuButton>
+          <MenuButton>
+            <BellIcon />
+            <span> Notificações</span>
+          </MenuButton>
+          <MenuButton>
+            <EmailIcon />
+            <span> Mensagens</span>
+          </MenuButton>
+          <MenuButton >
+            <FavoriteIcon />
+            <span> Favoritados</span>
+          </MenuButton>
+          <MenuButton>
+            <ProfileIcon />
+            <span> Perfil </span>
+          </MenuButton>
+          <Button>
+            <span> Tweetar </span>
+          </Button>
+        </TopSide>
 
-        <MenuButton>
-          <HomeIcon />
-          <span> Pagina Inicial </span>
-        </MenuButton>
-        <MenuButton>
-          <BellIcon />
-          <span> Notificações </span>
-        </MenuButton>
-        <MenuButton>
-          <EmailIcon />
-          <span> Mensagens</span>
-        </MenuButton>
-        <MenuButton>
-          <FavoriteIcon />
-          <span> Favoritados </span>
-        </MenuButton>
-        <MenuButton>
-          <ProfileIcon className="active"/>
-          <span> Perfil </span>
-        </MenuButton>
-        <Button>
-          <span>Tweetar </span>
-        </Button>
-      </Topside>
-      <BottomSide>
-        <Avatar />
-        <ProfileData>
-          <strong>Gislaine Jèssica</strong>
-          <span>@jessy_code</span>
-        </ProfileData>
-        <ExitIcon />
-      </BottomSide>
+        <BottomSide>
+          <Avatar src={image} alt="perfil" />
+          <ProfileData>
+            <strong>Gislaine Jéssica</strong>
+            <span>@jessy_code</span>
+          </ProfileData>
+          <ExitIcon />
+        </BottomSide>
     </Container>
     );
 }
